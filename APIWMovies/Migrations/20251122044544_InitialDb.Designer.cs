@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace APIWMovies.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251111031503_InitialDB")]
-    partial class InitialDB
+    [Migration("20251122044544_InitialDb")]
+    partial class InitialDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
