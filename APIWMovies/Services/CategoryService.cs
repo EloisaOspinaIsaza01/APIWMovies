@@ -27,15 +27,29 @@ namespace APIWMovies.Services
             throw new NotImplementedException();
         }
 
-        public async Task<CategoryDto> CreateCategoryAsync(CategoryCreateDto categoryDto)
+        public async Task<CategoryDto> CreateCategoryAsync(CategoryCreateDto categoryCreateDto)
         {
-            throw new NotImplementedException();
-        }
+            var categoryExists = await _categoryRepository.CategoryExistsByNameAsync(categoryCreateDto.Name);
 
-        public Task<bool> CreateCategoryAsync(Category category)
-        {
-            throw new NotImplementedException();
-        }
+            if (categoryExists)
+            {
+                throw new InvalidOperationException($"Ya existe una categorìa con el nombre de '{categoryCreateDto.Name}'");
+            }
+
+            //Mapear el DTO a la entidad   
+            var category = _mapper.Map<Category>(categoryCreateDto);
+
+            //Crear la categorìa en el repositorio
+            var categoryCreated = await _categoryRepository.CreateCategoryAsync(category);
+
+                if (!categoryCreated)
+                {
+                    throw new Exception("Ocurriò un error al crear la categorìa");
+                }
+
+                //Mapear la entidad creada a DTO
+                return _mapper.Map<CategoryDto>(category);
+            }
 
         public async Task<bool> DeleteCategoryAsync(int id)
         {
