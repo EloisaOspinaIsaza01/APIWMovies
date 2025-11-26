@@ -5,6 +5,7 @@ using APIWMovies.Repository.IRepository;
 using APIWMovies.Services;
 using APIWMovies.Services.IServices;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
