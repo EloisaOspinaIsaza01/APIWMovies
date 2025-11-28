@@ -1,6 +1,6 @@
-﻿using API.W.Movies.DAL.Models.Dtos;
+﻿using APIWMovies.DAL.Models.Dtos;
 
-namespace API.W.Movies.Services.IServices
+namespace APIWMovies.Services.IServices
 {
     public interface IMovieService
     {

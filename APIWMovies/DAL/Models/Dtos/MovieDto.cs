@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace API.W.Movies.DAL.Models.Dtos
+namespace APIWMovies.DAL.Models.Dtos
 {
     public class MovieDto
     {

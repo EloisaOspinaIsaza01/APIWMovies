@@ -1,4 +1,4 @@
-﻿using API.W.Movies.DAL.Models;
+﻿using APIWMovies.DAL.Models;
 using APIWMovies.DAL.Models;
 using Microsoft.EntityFrameworkCore;
 

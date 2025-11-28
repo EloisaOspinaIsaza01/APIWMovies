@@ -1,7 +1,7 @@
 ﻿using APIWMovies.DAL.Models;
 using System.ComponentModel.DataAnnotations;
 
-namespace API.W.Movies.DAL.Models
+namespace APIWMovies.DAL.Models
 {
     public class Movie : AuditBase
     {

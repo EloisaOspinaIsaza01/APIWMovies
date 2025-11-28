@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <Folder Include="DAL\Models\Dtos\Movie\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

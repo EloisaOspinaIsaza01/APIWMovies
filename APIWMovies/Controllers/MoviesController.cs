@@ -1,8 +1,8 @@
-﻿using API.W.Movies.DAL.Models.Dtos;
-using API.W.Movies.Services.IServices;
+﻿using APIWMovies.DAL.Models.Dtos;
+using APIWMovies.Services.IServices;
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.W.Movies.Controllers
+namespace APIWMovies.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

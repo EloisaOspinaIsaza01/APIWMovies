@@ -1,6 +1,6 @@
-﻿using API.W.Movies.Controllers;
-using API.W.Movies.DAL.Models;
-using API.W.Movies.DAL.Models.Dtos;
+﻿using APIWMovies.Controllers;
+using APIWMovies.DAL.Models;
+using APIWMovies.DAL.Models.Dtos;
 using AutoMapper;
 
 using APIWMovies.DAL.Models;

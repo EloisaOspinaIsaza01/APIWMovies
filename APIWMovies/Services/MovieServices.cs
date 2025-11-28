@@ -1,10 +1,10 @@
-﻿using API.W.Movies.DAL.Models;
-using API.W.Movies.DAL.Models.Dtos;
-using API.W.Movies.Repository.IRepository;
-using API.W.Movies.Services.IServices;
+﻿using APIWMovies.DAL.Models;
+using APIWMovies.DAL.Models.Dtos;
+using APIWMovies.Repository.IRepository;
+using APIWMovies.Services.IServices;
 using AutoMapper;
 
-namespace API.W.Movies.Services
+namespace APIWMovies.Services
 {
     public class MovieService : IMovieService
     {

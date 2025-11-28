@@ -1,6 +1,6 @@
-﻿using API.W.Movies.DAL.Models;
+﻿using APIWMovies.DAL.Models;
 
-namespace API.W.Movies.Repository.IRepository
+namespace APIWMovies.Repository.IRepository
 {
     public interface IMovieRepository
     {
